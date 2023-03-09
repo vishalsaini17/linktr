@@ -2,8 +2,7 @@
   font-display: swap;
   font-family: "Link Sans";
   font-weight: 200 400 800 900;
-  src: url(https://website.linktr.ee/static/LinkSans-LinkSansVF-5ba82435cfe1454f76404182afdbf4fc.woff2)
-    format("woff2-variations");
+  src: url(https://website.linktr.ee/static/LinkSans-LinkSansVF-5ba82435cfe1454f76404182afdbf4fc.woff2) format("woff2-variations");
 }
 
 body {
@@ -42,6 +41,10 @@ h2 {
   background-color: #f3f3f1;
 }
 
+.bg-green {
+  background-color: #d2e823;
+}
+
 .heading-1 {
   font-size: 3rem;
 }
@@ -70,6 +73,10 @@ h2 {
   align-items: center;
   padding: 4rem;
   min-height: 100vh;
+}
+
+.flip-card {
+  width: 100%;
 }
 
 .flip-card {
@@ -113,6 +120,7 @@ h2 {
 }
 
 @media (min-width: 576px) {
+
   .section-space,
   .header-space {
     padding: 3rem;
@@ -123,6 +131,7 @@ h2 {
   .heading-1 {
     font-size: 4rem;
   }
+
   h2 {
     font-size: 2.5rem;
   }
@@ -132,15 +141,18 @@ h2 {
   .heading-1 {
     font-size: 5.5rem;
   }
+
   h2 {
     font-size: 3.5rem;
   }
+
   .subheading {
     font-size: 1.25rem;
   }
 }
 
 @media (min-width: 1600px) {
+
   .container,
   .container-lg,
   .container-md,
@@ -164,7 +176,7 @@ h2 {
   padding-top: 48px;
 }
 
-.main-navbar.navbar > .container {
+.main-navbar.navbar>.container {
   background-color: #fff;
   max-width: 1568px;
   padding: 12px;
@@ -301,11 +313,9 @@ button.accordion-button.accord-btn {
 
 /* -------------------------- trusted bio -------------------------- */
 
-.trusted-bio .flip-card {
-  max-width: 400px;
-}
-
-.card-square > * , .card-rectangular > *, .card-oval > * {
+.card-square>*,
+.card-rectangular>*,
+.card-oval>* {
   border-radius: 2rem;
 }
 
@@ -325,17 +335,85 @@ button.accordion-button.accord-btn {
 }
 
 @media (min-width: 768px) {
-  .card-square > * {
+  .card-square>* {
     border-radius: 4rem;
   }
 
-  .card-rectangular > * {
+  .card-rectangular>* {
     border-radius: 1rem;
   }
 
-  .card-oval > * {
+  .card-oval>* {
     border-radius: 1000px;
   }
+}
+
+/*--------------------- engage-bio-----------------------------*/
+.content-box,
+.product-box,
+.audience-box {
+  border-radius: 32px;
+  height: 500px;
+}
+
+/*--------------------- plans-bio-----------------------------*/
+.card {
+  border-radius: 32px;
+}
+
+.p-40 {
+  padding: 40px 40px 0px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.min-space {
+  min-height: 376px;
+}
+
+.card-box {
+  justify-content: center;
+}
+
+.card-box .square {
+  height: 130px;
+  width: 130px;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+.card-box .circle {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.widget {
+  max-width: 320px;
+  margin: 7px 0;
+  height: 80px;
+}
+
+.card-text {
+  padding: 0px 0 40px 0px;
+}
+
+
+/*-------------------- featured bio ----------------------------*/
+.img-wrapper {
+  background: #fff;
+  max-width: 830px;
+  min-height: 420px;
+}
+
+.content-wrapper {
+  max-width: 994px;
 }
 
 /* -------------------------- Footer -------------------------- */
