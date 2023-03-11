@@ -106,7 +106,7 @@
   color: #d2e823;
   font-size: 48px;
   padding: 4rem;
-  max-width: 1050px;
+  /* max-width: 1050px; */
   text-align: center;
   margin: 0 auto;
 }
@@ -120,6 +120,14 @@
   color: #1e2330;
   font-size: 56px;
 }
+
+/* @media screen and (min-width:576px) {
+  .heading-1 .heading-2, .heading-3 , .heading-4 , .heading-5 {
+    font-size: 2rem;
+  }
+} */
+
+
 
 .navy-para {
   color: #1e2330;
@@ -189,7 +197,42 @@ button.accordion-button.accord-btn {
 .product-box,
 .audience-box {
   border-radius: 32px;
-  height: 500px;
+  padding: 48px 40px;
+}
+ .content-way .card-oval{
+   width: 100%;
+   height: auto;
+} 
+.content-way .flip-front , .flip-back{
+  border-radius: 32px;
+  background: none;
+  overflow: hidden;
+  padding: 0;
+  min-height: auto;
+}
+ .items{
+  padding: 0 5%;
+  width: 100%;
+  min-height: 250px;
+}  
+.text a{
+  font-size: 28px;
+  font-weight: 560;
+}
+.product-box .products {
+  max-width: 150px;
+  min-height: 150px;
+  align-items: center;
+}
+.products img{
+    border-radius: 32px;
+    -webkit-touch-callout: none;
+    pointer-events: none;
+    -webkit-transform: translateX(calc(var(--x)*1%)) rotateY(37deg) rotateX(-5deg) rotate(-5deg) scale(var(--scale));
+    transform: translateX(calc(var(--x)*1%)) rotateY(37deg) rotateX(-5deg) rotate(-5deg) scale(var(--scale));
+    transition: .4s transform var(--ease-out-cubic);
+    --scale: 1;
+    --x: 0;
 }
 
 /*--------------------- plans-bio-----------------------------*/
@@ -243,7 +286,6 @@ button.accordion-button.accord-btn {
 
 /*-------------------- featured bio ----------------------------*/
 .img-wrapper {
-  background: #fff;
   max-width: 830px;
   min-height: 420px;
 }
@@ -251,7 +293,14 @@ button.accordion-button.accord-btn {
 .content-wrapper {
   max-width: 994px;
 }
-
+.content-wrapper .para p{
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(103, 107, 95);
+  margin-bottom: 8px;
+}
+.slider-nav button::after{
+}
 /* -------------------------- Footer -------------------------- */
 
 .footer {

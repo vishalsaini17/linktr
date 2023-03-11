@@ -44,9 +44,18 @@ h2 {
 .bg-green {
   background-color: #d2e823;
 }
+.text-green{
+  color: #d2e823;
+}
+.text-honey-flower{
+  color: #502274;
+}
 
 .heading-1 {
   font-size: 3rem;
+}
+@media screen {
+  
 }
 
 .subheading {
