@@ -5,6 +5,15 @@
   src: url(https://website.linktr.ee/static/LinkSans-LinkSansVF-5ba82435cfe1454f76404182afdbf4fc.woff2) format("woff2-variations");
 }
 
+:root {
+  --pear-color: #d2e823;
+  --seaweed-color: #254f1a;
+  --melanie-color: #e9c0e9;
+  --venetian-red-color: #780016;
+  --honey-flower-color: #502274;
+  --desert-storm-color: #f3f3f1;
+}
+
 body {
   background-color: #f3f3f1;
   font-family: "Link Sans", "Arial Black", Arial, sans-serif;
@@ -21,36 +30,36 @@ h2 {
   font-size: 2rem;
 }
 
+.bg-pear {
+  background-color: var(--pear-color);
+}
+
 .bg-seaweed {
-  background-color: #254f1a;
+  background-color: var(--seaweed-color);
 }
 
 .bg-melanie {
-  background-color: #e9c0e9;
+  background-color: var(--melanie-color);
 }
 
 .bg-venetian-red {
-  background-color: #780016;
+  background-color: var(--venetian-red-color);
 }
 
 .bg-honey-flower {
-  background-color: #502274;
+  background-color: var(--honey-flower-color);
 }
 
 .bg-desert-storm {
-  background-color: #f3f3f1;
+  background-color: var(--desert-storm-color);
 }
 
-.bg-green {
-  background-color: #d2e823;
-}
-
-.text-green {
-  color: #d2e823;
+.text-pear {
+  color: var(--pear-color);
 }
 
 .text-honey-flower {
-  color: #502274;
+  color: var(--honey-flower-color);
 }
 
 .heading-1 {
@@ -74,17 +83,21 @@ h2 {
   border-radius: 1000px;
 }
 
-.btn-purple {
-  background-color: rgb(233, 192, 233);
-  color: #1e2330;
+.btn-melanie {
+  background-color: #e8bfe8;
+  color: #1E2330;
 }
 
-.btn-dark-purple {
+.btn-melanie:hover {
+  background-color: #e3b9e4
+}
+
+.btn-honey-flower {
   background-color: #502274;
   color: #fff;
 }
 
-.btn-green {
+.btn-pear {
   background-color: #d2e823;
 }
 
