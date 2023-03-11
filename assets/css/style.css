@@ -74,18 +74,6 @@
   padding-block: 1.138em;
 }
 
-.btn-purple {
-  background-color: rgb(233, 192, 233);
-  color: #1e2330;
-}
-
-.dark-purple {
-  background-color: #502274;
-  color: #fff;
-  padding: 15px 24px;
-  border-radius: 30px;
-}
-
 .heading-2 {
   font-size: 56px;
   color: #502274;
@@ -127,8 +115,6 @@
   }
 } */
 
-
-
 .navy-para {
   color: #1e2330;
   font-size: 20px;
@@ -149,10 +135,6 @@ button.accordion-button.accord-btn {
   font-size: 24px;
   box-shadow: none;
   background: none;
-}
-
-.green-btn {
-  background-color: #d2e823;
 }
 
 /* -------------------------- trusted bio -------------------------- */
@@ -299,8 +281,7 @@ button.accordion-button.accord-btn {
   color: rgb(103, 107, 95);
   margin-bottom: 8px;
 }
-.slider-nav button::after{
-}
+
 /* -------------------------- Footer -------------------------- */
 
 .footer {

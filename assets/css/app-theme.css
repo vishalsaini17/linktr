@@ -44,18 +44,17 @@ h2 {
 .bg-green {
   background-color: #d2e823;
 }
-.text-green{
+
+.text-green {
   color: #d2e823;
 }
-.text-honey-flower{
+
+.text-honey-flower {
   color: #502274;
 }
 
 .heading-1 {
   font-size: 3rem;
-}
-@media screen {
-  
 }
 
 .subheading {
@@ -73,6 +72,20 @@ h2 {
 
 .btn-rounded {
   border-radius: 1000px;
+}
+
+.btn-purple {
+  background-color: rgb(233, 192, 233);
+  color: #1e2330;
+}
+
+.btn-dark-purple {
+  background-color: #502274;
+  color: #fff;
+}
+
+.btn-green {
+  background-color: #d2e823;
 }
 
 .section-space,
