@@ -6,12 +6,17 @@
 }
 
 :root {
-  --pear-color: #d2e823;
-  --seaweed-color: #254f1a;
-  --melanie-color: #e9c0e9;
-  --venetian-red-color: #780016;
-  --honey-flower-color: #502274;
-  --desert-storm-color: #f3f3f1;
+  --color-opacity: 1;
+  --pear-color: rgba(210, 232, 35, 1);
+  --seaweed-color: rgba(37, 79, 26, 1);
+  --melanie-color: rgba(233, 192, 233, 1);
+  --prelude-color: rgba(227, 185, 228, 1);
+  --venetian-red-color: rgba(120, 0, 22, 1);
+  --honey-flower-color: rgba(80, 34, 116, 1);
+  --eminence-color: rgba(94, 51, 128, 1);
+  --desert-storm-color: rgba(243, 243, 241, 1);
+  --ebony-clay-color: rgba(31, 36, 48, 1);
+
 }
 
 body {
@@ -84,12 +89,14 @@ h2 {
 }
 
 .btn-melanie {
-  background-color: #e8bfe8;
-  color: #1E2330;
+  background-color: var(--melanie-color);
+  border-color: var(--melanie-color);
+  color: var(--ebony-clay-color);
 }
 
 .btn-melanie:hover {
-  background-color: #e3b9e4
+  --color-opacity: 0.5;
+  background-color: var(--prelude-color);
 }
 
 .btn-honey-flower {
