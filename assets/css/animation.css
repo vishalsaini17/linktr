@@ -1,0 +1,49 @@
+.caterpillar-animation {
+  --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --ease-in-out-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  font-size: 10px;
+}
+
+.caterpillar-animation .visual {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  margin: 0 auto;
+  perspective: 200rem;
+  place-items: center;
+  position: relative;
+  width: 90%;
+}
+
+.caterpillar-animation .collage,
+.caterpillar-animation .stack {
+  grid-area: 1/1;
+  height: 100%;
+  width: 100%;
+}
+
+.caterpillar-animation .stack {
+  transform-style: preserve-3d;
+  transition: visibility .3s;
+  transition-delay: .2s;
+}
+
+.caterpillar-animation .visual[side="1"] .stack {
+  transition: visibility .3s;
+  transition-delay: 0.1s;
+  visibility: hidden;
+}
+
+.caterpillar-animation .stack .stack-item {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform-origin: 25% 45%;
+  transform-origin: 25% 45%;
+  width: 50%;
+}
+
+/* ----------------------------------------------------------------- */
