@@ -16,7 +16,11 @@
   background-color: #fff;
   max-width: 1568px;
   padding: 12px;
-  border-radius: 10000px;
+}
+@media screen and (min-width:576px) {
+  .main-navbar.navbar>.container {
+    border-radius: 1000px;
+  }
 }
 
 .main-navbar .navbar-brand {
@@ -44,14 +48,6 @@
 
 /* -------------------------- header -------------------------- */
 
-.green-heading {
-  color: #d2e320;
-}
-
-.green-para {
-  color: #d2e320;
-  padding: 1rem 0;
-}
 
 .yourname-input-group {
   position: relative;
@@ -73,51 +69,8 @@
   padding-inline-start: 5.15em;
   padding-block: 1.138em;
 }
-
-.heading-2 {
-  font-size: 56px;
-  color: #502274;
-  padding: 3rem 0;
-}
-
-.purple-para {
-  color: #502274;
-  font-size: 20px;
-}
-
-.heading-3 {
-  color: #e9c0e9;
-  font-size: 56px;
-}
-
-.heading-5 {
-  color: #d2e823;
+.small-heading {
   font-size: 48px;
-  padding: 4rem;
-  /* max-width: 1050px; */
-  text-align: center;
-  margin: 0 auto;
-}
-
-.light-purple-para {
-  color: #e9c0e9;
-  font-size: 20px;
-}
-
-.heading-4 {
-  color: #1e2330;
-  font-size: 56px;
-}
-
-/* @media screen and (min-width:576px) {
-  .heading-1 .heading-2, .heading-3 , .heading-4 , .heading-5 {
-    font-size: 2rem;
-  }
-} */
-
-.navy-para {
-  color: #1e2330;
-  font-size: 20px;
 }
 
 .accord-item {
@@ -130,7 +83,7 @@
   margin-bottom: 1rem;
 }
 
-button.accordion-button.accord-btn {
+button.accordion-button:not(collapsed).accord-btn {
   color: #e9c0e9;
   font-size: 24px;
   box-shadow: none;
@@ -195,11 +148,22 @@ button.accordion-button.accord-btn {
  .items{
   padding: 0 5%;
   width: 100%;
-  min-height: 250px;
+  min-height: 0;
 }  
+@media screen and (min-width:992px) {
+  .items{
+   
+    min-height: 250px;
+  }
+}
 .text a{
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 560;
+}
+@media screen and (min-width:992px) {
+  .text a{
+    font-size: 28px;
+  }
 }
 .product-box .products {
   max-width: 150px;
@@ -264,6 +228,13 @@ button.accordion-button.accord-btn {
 .card-text {
   padding: 0px 0 40px 0px;
 }
+/*---------------faq's---------------*/
+
+.faq .accordion{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 
 
 /*-------------------- featured bio ----------------------------*/
@@ -282,6 +253,28 @@ button.accordion-button.accord-btn {
   margin-bottom: 8px;
 }
 
+/*-----------------testimonials---------------------*/
+
+.swiper-button-next.next-btn{
+  transform: rotate(180deg);
+}
+.swiper-button-next , .swiper-button-prev{
+  border: 1px solid #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+}
+.swiper-button-next::after{
+  display: none;
+  border: 1px solid ;
+}
+.swiper-button-prev::after{
+  display: none;
+  border: 1px solid ;
+}
+#swiper-nav .swiper-button-next , .swiper-button-prev {
+  bottom: 0 !important;
+}
 /* -------------------------- Footer -------------------------- */
 
 .footer {
@@ -308,4 +301,10 @@ button.accordion-button.accord-btn {
 .footer-botttom {
   padding: 7rem 2rem;
   border-radius: 43px;
+}
+.social-links a , button {
+margin: 0 5px;
+}
+.social-links button a svg{
+  fill: rgb(255, 255, 255);
 }
